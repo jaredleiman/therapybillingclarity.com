@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AI Scribes and Therapy Upcoding: What the BCBS Findings Mean for LCSWs, LMFTs, and LPCs</title>
+<meta name="description" content="BCBS found AI scribes drove $2.3B in hospital upcoding. Here's what outpatient therapists billing Medicare need to watch for in their own practice."/>
+<link rel="canonical" href="https://www.therapybillingclarity.com/blog/ai-scribes-therapy-upcoding-bcbs-findings/"/>
+<meta property="og:title" content="AI Scribes and Therapy Upcoding: What the BCBS Findings Mean for LCSWs, LMFTs, and LPCs"/>
+<meta property="og:description" content="BCBS found AI scribes drove $2.3B in hospital upcoding. Here's what outpatient therapists billing Medicare need to watch for in their own practice."/>
+<meta property="og:type" content="article"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--sage:#4e635a;--sage-container:#8da399;--sage-fixed:#d1e8dd;--slate:#525f77;--terracotta:#81533f;--cream:#f9f9f8;--ink:#191c1c;--on-surface-variant:#424845;--muted:#727875;--white:#ffffff;}
+body{font-family:'Manrope',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;font-size:17px;}
+header.site-nav{position:fixed;top:0;left:0;width:100%;z-index:100;padding:0 1.5rem;height:64px;display:flex;align-items:center;justify-content:space-between;background:rgba(249,249,248,.8);backdrop-filter:blur(20px);box-shadow:0 4px 30px rgba(78,99,90,.05)}
+.nav-brand{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+.nav-brand-icon{width:20px;height:20px;color:var(--sage)}
+.nav-brand-text{font-family:'Noto Serif',serif;font-style:italic;font-size:1.25rem;color:var(--sage)}
+.nav-cta{background:linear-gradient(to right,var(--sage),var(--sage-container));color:var(--white);padding:.6rem 1.25rem;border-radius:.75rem;text-decoration:none;font-weight:500;font-size:.85rem}
+article{max-width:760px;margin:0 auto;padding:7rem 1.5rem 5rem}
+.breadcrumb{font-size:.85rem;color:var(--muted);margin-bottom:2rem}
+.breadcrumb a{color:var(--sage);text-decoration:none}
+.post-tag{font-family:'Manrope',sans-serif;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;color:var(--terracotta);display:block;margin-bottom:1rem}
+h1{font-family:'Noto Serif',serif;font-weight:400;font-size:clamp(2rem,5vw,3rem);line-height:1.15;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.02em}
+p.lede{font-family:'Noto Serif',serif;font-style:italic;font-size:1.15rem;color:var(--slate);margin-bottom:3rem;line-height:1.6}
+h2{font-family:'Noto Serif',serif;font-weight:400;font-size:1.75rem;color:var(--ink);margin:3.5rem 0 1.25rem;}
+h3{font-family:'Manrope',sans-serif;font-size:1.15rem;color:var(--sage);margin:2.25rem 0 .75rem;font-weight:600}
+p{margin-bottom:1.25rem;color:var(--on-surface-variant)}
+ul,ol{margin:1rem 0 1.75rem 1.5rem;color:var(--on-surface-variant)}
+li{margin-bottom:.6rem;line-height:1.65}
+strong{color:var(--ink);font-weight:600}
+.callout{background:rgba(249,249,248,.7);border:1px solid rgba(194,200,196,.3);padding:2rem 2.25rem;margin:2.5rem 0;border-radius:1.5rem;}
+.callout p{margin:0;color:var(--on-surface-variant)}
+.callout strong{color:var(--sage);font-weight:600}
+.cta-box{background:var(--sage-fixed);padding:3rem 2rem;margin:4rem 0 2rem;border-radius:2rem;text-align:center}
+.cta-box h3{font-family:'Noto Serif',serif;font-weight:400;font-size:1.6rem;margin:0 0 .75rem;color:var(--sage)}
+.cta-box p{color:var(--on-surface-variant);margin-bottom:1.75rem;font-size:1rem}
+.cta-box a{display:inline-block;background:var(--ink);color:var(--cream);padding:1rem 2rem;border-radius:.75rem;text-decoration:none;font-weight:500}
+p.disclaimer{font-size:.85rem;color:var(--muted);margin-top:2rem;font-style:italic}
+footer{width:100%;padding:3rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;text-align:center;background:var(--slate);color:var(--cream);font-size:.85rem}
+.footer-brand{font-family:'Noto Serif',serif;font-style:italic;font-size:1.1rem;color:var(--white);opacity:.9}
+.footer-links{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center}
+.footer-links a{color:rgba(249,249,248,.6);text-decoration:none}
+.footer-disclaimer{opacity:.55;max-width:640px;line-height:1.6;font-size:.78rem}
+.footer-copyright{opacity:.45;font-size:.78rem}
+</style>
+</head>
+<body>
+<header class="site-nav">
+<a href="/" class="nav-brand">
+<svg class="nav-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 5 8 8.5 8 12s1.5 7 4 10c2.5-3 4-6.5 4-10s-1.5-7-4-10z"/><path d="M12 12c-2 0-4 1-4 3"/><path d="M12 12c2 0 4 1 4 3"/></svg>
+<span class="nav-brand-text">Therapy Billing Clarity</span>
+</a>
+<a href="/#pricing" class="nav-cta">Subscribe — $197/mo</a>
+</header>
+<article>
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog/">Blog</a> &rsaquo; AI Scribes and Therapy Upcoding</div>
+<span class="post-tag">AI Compliance · Medicare Therapy Billing</span>
+<h1>AI Scribes and Therapy Upcoding: What the BCBS Findings Mean for LCSWs, LMFTs, and LPCs</h1>
+
+<p class="lede">In March 2026, Blue Cross Blue Shield Association released the first hard evidence that hospital AI scribe tools are inflating billed diagnoses — to the tune of $2.3 billion in excess spending. The report focused on hospitals, but the implications for outpatient therapy practices billing Medicare are direct, and they are arriving faster than most practice owners realize.</p>
+
+<h2>What BCBS Actually Found</h2>
+
+<p>Blue Health Intelligence, the BCBS analytics arm, looked at three years of commercial inpatient claims data and identified a clear pattern: at the top 10% of hospitals by coding intensity growth, the share of maternity patients coded with acute posthemorrhagic anemia climbed from about 4% in 2022 to more than 12% by early 2025. At the other 90% of hospitals, the rate barely moved.</p>
+
+<p>The diagnosis almost always warrants a blood transfusion. Transfusion rates at those same hospitals stayed flat at about 1%. Patients were being coded sicker than they were being treated. BCBS projected national exposure at $663 million in inpatient overbilling and at least $1.67 billion in outpatient.</p>
+
+<p>The mechanism is ambient AI scribes — listening tools that transcribe the visit and suggest diagnosis codes based on what the AI "hears" being discussed. When those suggestions aren't carefully reviewed, conditions that were mentioned in passing end up coded as active diagnoses.</p>
+
+<h2>Why This Matters for Outpatient Mental Health Practices</h2>
+
+<p>LCSWs, LMFTs, and LPCs became Medicare-eligible providers on January 1, 2024. Most independent therapists billing Medicare are two years into a completely new documentation regime — and many have adopted AI-assisted note tools to keep up.</p>
+
+<p>The risk pattern for therapy is different from hospital maternity care, but the mechanism is identical. AI-generated session notes can drift toward:</p>
+
+<ul>
+  <li><strong>Upcoded session length.</strong> 90834 (45-minute psychotherapy) billed when the session ran 38 minutes. The AI captured a "long session" descriptor and the coding stuck.</li>
+  <li><strong>Add-on code inflation.</strong> 90785 (interactive complexity) appended to sessions where no qualifying factor was actually documented — the AI flagged "family dynamics" from a passing comment.</li>
+  <li><strong>E/M with psychotherapy creep.</strong> 99212 + 90833 billed by therapists who aren't eligible to bill E/M codes at all, because the scribe pulled the template from a prior psychiatrist session.</li>
+  <li><strong>Diagnosis intensification.</strong> A patient discussing grief gets coded F33.1 (recurrent major depressive, moderate) when the documentation supports F43.21 (adjustment disorder with depressed mood). Same conversation, different reimbursement, different audit risk.</li>
+</ul>
+
+<h2>What Payers Are Already Doing</h2>
+
+<p>UnitedHealth Group has been public about its $3 billion AI investment specifically focused on claims auditing. Optum's coding-review systems are flagging outlier providers — not hospitals, individual NPIs — and routing high-coding-intensity providers into prepayment review. For an independent therapist, that means claims held for 30-90 days pending documentation review, not the clean 14-day turnaround most small practices budget around.</p>
+
+<p>Medicare contractors have been quieter, but the CERT program's 2025 error rate data already shows therapy services above the national average. A LCSW or LMFT flagged in a CERT sample now faces documentation standards that were written for psychologists with decades of Medicare experience.</p>
+
+<h2>Five Questions to Ask Before You Submit Any AI-Assisted Session Note</h2>
+
+<ol>
+  <li>Does the session time in the note match the actual time billed? Medicare requires start-and-stop time for 90832/90834/90837.</li>
+  <li>Is every diagnosis in the note supported by specific clinical content in the body of the note — not just a header?</li>
+  <li>Does the interactive complexity add-on (90785) describe a specific qualifying factor that actually occurred in this session?</li>
+  <li>Are you billing any codes your license doesn't cover? LCSWs cannot bill 90791 in some MACs without specific credentialing.</li>
+  <li>Has the AI inserted a diagnosis you did not personally verify? The billing NPI is responsible, not the software vendor.</li>
+</ol>
+
+<div class="cta-box">
+  <h3>Monthly compliance intelligence for independent therapy practices</h3>
+  <p>OIG updates, CMS rule changes, CPT code reviews, and audit trend alerts — written in plain English every month. Built for LCSWs, LMFTs, LPCs, and counselors navigating Medicare's newest billing environment.</p>
+  <a href="/#pricing">Subscribe — $197/month →</a>
+</div>
+
+<h2>The Bottom Line</h2>
+
+<p>The BCBS findings are not a hospital problem. They are an AI-scribe problem, and AI scribes are in therapy practices across the country right now. The providers who stay out of audit trouble will be the ones who treat the AI suggestion as a draft and the final note as their personal professional attestation. The ones who click through get flagged — first by the payer's AI, then by the auditor.</p>
+
+<p class="disclaimer">This post is general compliance information, not legal or billing advice. For specific situations, consult a licensed healthcare attorney or certified professional coder.</p>
+</article>
+<footer>
+<div class="footer-brand">Therapy Billing Clarity</div>
+<div class="footer-links"><a href="/">Home</a><a href="/blog/">Blog</a><a href="/#pricing">Subscribe</a></div>
+<p class="footer-disclaimer">Therapy Billing Clarity provides general compliance information summarizing publicly available CMS, OIG, and payer guidance. It is not legal advice, not billing advice, and not a substitute for a qualified healthcare attorney or certified professional coder.</p>
+<p class="footer-copyright">&copy; 2026 Therapy Billing Clarity. All rights reserved.</p>
+</footer>
+</body>
+</html>
