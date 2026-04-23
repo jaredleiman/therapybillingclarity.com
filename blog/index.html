@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medicare Billing Blog for Therapists | Therapy Billing Clarity</title>
+  <meta name="description" content="Plain-English Medicare billing guides for LCSWs, LMFTs, and LPCs in private practice. CPT code documentation, OIG audit alerts, telehealth rules, and compliance updates."/>
+  <link rel="canonical" href="https://therapybillingclarity.com/blog/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{--sage:#4e635a;--sage-container:#8da399;--sage-fixed:#d1e8dd;--sage-fixed-dim:#b5ccc1;--slate:#525f77;--terracotta:#81533f;--terracotta-fixed:#ffdbcd;--cream:#f9f9f8;--surface-container:#edeeed;--surface-container-low:#f3f3f2;--outline-variant:#c2c8c4;--ink:#191c1c;--on-surface-variant:#424845;--muted:#727875;--white:#ffffff;}
+    html{scroll-behavior:smooth}
+    body{font-family:'Manrope',sans-serif;background:var(--cream);color:var(--ink);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}
+    ::selection{background:var(--sage-fixed-dim);color:var(--sage)}
+    header.site-nav{position:fixed;top:0;left:0;width:100%;z-index:100;padding:0 1.5rem;height:64px;display:flex;align-items:center;justify-content:space-between;background:rgba(249,249,248,.8);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 4px 30px rgba(78,99,90,.05)}
+    .nav-brand{display:flex;align-items:center;gap:.5rem;text-decoration:none}
+    .nav-brand-icon{width:20px;height:20px;color:var(--sage)}
+    .nav-brand-text{font-family:'Noto Serif',serif;font-style:italic;font-size:1.25rem;color:var(--sage)}
+    .nav-cta{background:linear-gradient(to right,var(--sage),var(--sage-container));color:var(--white);padding:.6rem 1.25rem;border-radius:.75rem;text-decoration:none;font-weight:500;font-size:.85rem}
+    .nav-cta:hover{transform:translateY(-1px)}
+    main{max-width:900px;margin:0 auto;padding:7rem 1.5rem 5rem}
+    .page-header{margin-bottom:3.5rem}
+    .eyebrow{font-family:'Manrope',sans-serif;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;color:var(--terracotta);display:block;margin-bottom:1rem}
+    h1{font-family:'Noto Serif',serif;font-weight:400;font-size:clamp(2rem,5vw,3rem);line-height:1.15;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.02em}
+    h1 em{font-style:italic}
+    .page-intro{font-family:'Noto Serif',serif;font-style:italic;font-size:1.1rem;color:var(--slate);max-width:640px;line-height:1.65}
+    .section-label{font-family:'Manrope',sans-serif;font-weight:600;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin:3rem 0 1.5rem;padding-bottom:.75rem;border-bottom:1px solid var(--outline-variant)}
+    .post-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-bottom:2rem}
+    .post-card{background:var(--white);border:1px solid var(--outline-variant);border-radius:1.25rem;padding:1.75rem;text-decoration:none;display:flex;flex-direction:column;gap:.75rem;transition:box-shadow .2s,transform .2s}
+    .post-card:hover{box-shadow:0 8px 32px rgba(78,99,90,.1);transform:translateY(-2px)}
+    .card-tag{font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--terracotta)}
+    .card-title{font-family:'Noto Serif',serif;font-size:1.15rem;font-weight:500;color:var(--ink);line-height:1.35;letter-spacing:-.01em}
+    .card-excerpt{font-size:.9rem;color:var(--on-surface-variant);line-height:1.65;font-weight:400}
+    .card-meta{font-size:.78rem;color:var(--muted);margin-top:auto;padding-top:.75rem;border-top:1px solid var(--outline-variant)}
+    .post-card.featured{grid-column:1/-1;flex-direction:row;gap:2rem;align-items:flex-start;background:var(--sage-fixed)}
+    .post-card.featured .card-title{font-size:1.4rem}
+    .post-card.featured .card-excerpt{font-size:.95rem;max-width:540px}
+    footer{width:100%;padding:3rem 1.5rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;text-align:center;background:var(--slate);color:var(--cream);font-size:.85rem}
+    footer .footer-brand{font-family:'Noto Serif',serif;font-style:italic;font-size:1.1rem;color:var(--white);opacity:.9}
+    footer .footer-links{display:flex;gap:2rem;flex-wrap:wrap;justify-content:center}
+    footer .footer-links a{color:rgba(249,249,248,.6);text-decoration:none;transition:color .2s}
+    footer .footer-links a:hover{color:var(--white)}
+    footer .footer-disclaimer{opacity:.55;max-width:640px;line-height:1.6;font-size:.78rem}
+    footer .footer-copyright{opacity:.45;font-size:.78rem}
+    @media(max-width:640px){body{font-size:16px}main{padding:5.5rem 1.25rem 3rem}h1{font-size:1.85rem}.post-grid{grid-template-columns:1fr}.post-card.featured{flex-direction:column}.nav-brand-text{font-size:1.05rem}.nav-cta{padding:.5rem 1rem;font-size:.75rem}}
+  </style>
+</head>
+<body>
+<header class="site-nav">
+  <a href="/" class="nav-brand">
+    <svg class="nav-brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C9.5 5 8 8.5 8 12s1.5 7 4 10c2.5-3 4-6.5 4-10s-1.5-7-4-10z"/><path d="M12 12c-2 0-4 1-4 3"/><path d="M12 12c2 0 4 1 4 3"/></svg>
+    <span class="nav-brand-text">Therapy Billing Clarity</span>
+  </a>
+  <a href="/#pricing" class="nav-cta">Subscribe &mdash; $197/mo</a>
+</header>
+<main>
+  <div class="page-header">
+    <span class="eyebrow">Medicare Billing Intelligence</span>
+    <h1>The <em>billing</em> guides independent therapists actually need</h1>
+    <p class="page-intro">Plain-English breakdowns of CPT documentation requirements, OIG enforcement patterns, telehealth rules, and Medicare compliance updates &mdash; written for LCSWs, LMFTs, and LPCs in private practice.</p>
+  </div>
+  <div class="section-label">CPT Code Guides</div>
+  <div class="post-grid">
+    <a href="/blog/90837-cpt-code-guide/" class="post-card featured">
+      <div>
+        <div class="card-tag">CPT Code Guide</div>
+        <div class="card-title">CPT Code 90837: The 60-Minute Psychotherapy Billing Guide</div>
+        <div class="card-excerpt">The highest-reimbursing individual therapy code carries the highest audit scrutiny. What the 53-minute floor means, how to document start and stop times defensibly, and the OIG patterns that flag high-frequency 90837 billing.</div>
+        <div class="card-meta">April 17, 2026</div>
+      </div>
+    </a>
+    <a href="/blog/90834-cpt-code-guide/" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT Code 90834: The 45-Minute Psychotherapy Billing Guide</div>
+      <div class="card-excerpt">The backbone of most outpatient practices. How to document the 38&ndash;52 minute window, why 90834 is the lower-risk default, and the denial reasons that hit this code most.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/90791-cpt-code-guide/" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT Code 90791: Psychiatric Diagnostic Evaluation Billing Guide</div>
+      <div class="card-excerpt">The intake code every independent therapist uses. What a defensible evaluation note must include, how often it can be billed, and why the mental status exam is the most common missing element on audit.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/90785-interactive-complexity/" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT Code 90785: Interactive Complexity Add-On Billing Guide</div>
+      <div class="card-excerpt">The add-on code most therapists underuse. The four qualifying categories, which primary codes it can be paired with, and why applying it to every child session is an audit risk.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/90847-family-therapy-cpt/" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT Code 90847: Family Therapy With Patient Present</div>
+      <div class="card-excerpt">When the identified patient must be in the room, how 90847 differs from 90846, and the documentation requirements for billing family sessions under Medicare.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/90846-cpt-code-guide/" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT Code 90846: Family Therapy Without Patient Present</div>
+      <div class="card-excerpt">When to bill family therapy without the identified patient in the room, what the patient-centered documentation requirement means in practice, and the denial patterns that hit this code.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/90853-group-therapy-cpt/" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT Code 90853: Group Therapy Billing Guide</div>
+      <div class="card-excerpt">How group therapy is billed per patient per session, Medicare medical necessity requirements for group, and the documentation elements that hold up on audit.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/90837-vs-90834-which-code/" class="post-card">
+      <div class="card-tag">CPT Code Comparison</div>
+      <div class="card-title">90837 vs. 90834: Which Code to Bill for Your Sessions</div>
+      <div class="card-excerpt">The time-based rules, the documentation differences, and why code selection must always follow actual session length &mdash; not reimbursement preference.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/cpt-90837-90834-90832-billing-requirements.html" class="post-card">
+      <div class="card-tag">CPT Code Guide</div>
+      <div class="card-title">CPT 90837, 90834, and 90832: Medicare Billing Requirements Compared</div>
+      <div class="card-excerpt">A side-by-side comparison of the three individual psychotherapy codes &mdash; time windows, documentation requirements, and the denial patterns specific to each.</div>
+      <div class="card-meta">April 12, 2026</div>
+    </a>
+  </div>
+  <div class="section-label">Medicare Compliance &amp; Documentation</div>
+  <div class="post-grid">
+    <a href="/blog/medicare-medical-necessity-mental-health-documentation.html" class="post-card">
+      <div class="card-tag">Documentation</div>
+      <div class="card-title">Medicare Medical Necessity Documentation for Mental Health</div>
+      <div class="card-excerpt">What Medicare actually requires to establish and maintain medical necessity for ongoing psychotherapy &mdash; and the specific documentation gaps that fail audit.</div>
+      <div class="card-meta">April 12, 2026</div>
+    </a>
+    <a href="/blog/medicare-billing-lcsw-lmft-lpc-2024.html" class="post-card">
+      <div class="card-tag">Medicare Billing</div>
+      <div class="card-title">Medicare Billing for LCSWs, LMFTs, and LPCs (2024 Rules)</div>
+      <div class="card-excerpt">The 2024 expansion that added LMFTs and LPCs as Medicare providers, what changed for each license type, and the enrollment and billing requirements that apply.</div>
+      <div class="card-meta">April 12, 2026</div>
+    </a>
+    <a href="/blog/therapist-telehealth-medicare-billing-rules.html" class="post-card">
+      <div class="card-tag">Telehealth</div>
+      <div class="card-title">Telehealth Medicare Billing Rules for Therapists</div>
+      <div class="card-excerpt">Current Medicare telehealth coverage for mental health services &mdash; the extensions in effect, originating site requirements, and what remains subject to change.</div>
+      <div class="card-meta">April 12, 2026</div>
+    </a>
+    <a href="/blog/oig-mental-health-billing-audit-2025-2026.html" class="post-card">
+      <div class="card-tag">OIG Compliance</div>
+      <div class="card-title">OIG Mental Health Billing Audit Priorities 2025&ndash;2026</div>
+      <div class="card-excerpt">What the Office of Inspector General is actively auditing in mental health billing, which CPT codes are under scrutiny, and how to assess your practice&rsquo;s exposure.</div>
+      <div class="card-meta">April 12, 2026</div>
+    </a>
+    <a href="/blog/does-medicare-cover-therapy/" class="post-card">
+      <div class="card-tag">Medicare Coverage</div>
+      <div class="card-title">Does Medicare Cover Therapy? Coverage Rules for Providers</div>
+      <div class="card-excerpt">Medicare Part B coverage for outpatient mental health services, which diagnoses qualify, and what therapists need to understand about billing under current coverage rules.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+    <a href="/blog/finding-medicare-therapist/" class="post-card">
+      <div class="card-tag">Patient Access</div>
+      <div class="card-title">How Medicare Patients Find Enrolled Therapists</div>
+      <div class="card-excerpt">How your Medicare patients search for providers on Care Compare, what &ldquo;accepting assignment&rdquo; means to them, and what to tell patients who ask about your Medicare participation status.</div>
+      <div class="card-meta">April 17, 2026</div>
+    </a>
+  </div>
+  <div class="section-label">Latest Update</div>
+  <div class="post-grid">
+    <a href="/blog/ai-scribes-therapy-upcoding-bcbs-findings/" class="post-card featured">
+      <div>
+        <div class="card-tag">Compliance Alert &mdash; April 2026</div>
+        <div class="card-title">AI Scribes and Therapy Upcoding: What the BCBS Findings Mean for Your Practice</div>
+        <div class="card-excerpt">BlueCross BlueShield&rsquo;s published audit findings on AI-assisted documentation and upcoding patterns &mdash; what the data shows, which codes are flagged, and what independent therapists should be doing to protect their billing before this reaches Medicare contractors.</div>
+        <div class="card-meta">April 20, 2026 &mdash; Most Recent Issue</div>
+      </div>
+    </a>
+  </div>
+</main>
+<footer>
+  <div class="footer-brand">Therapy Billing Clarity</div>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#pricing">Subscribe</a>
+  </div>
+  <p class="footer-disclaimer">Therapy Billing Clarity provides general compliance information summarizing publicly available CMS, OIG, and payer guidance. It is not legal advice, not billing advice, and not a substitute for a qualified healthcare attorney or certified professional coder.</p>
+  <p class="footer-copyright">&copy; 2026 Therapy Billing Clarity. All rights reserved.</p>
+</footer>
+</body>
+</html>
